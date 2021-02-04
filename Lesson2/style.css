@@ -1,0 +1,10 @@
+.box {
+  margin: auto;
+  width: 600px;
+}
+.font-arial {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.color-blue {
+  color: cornflowerblue;
+}
