@@ -1,0 +1,30 @@
+table {
+    margin: auto;
+}
+table, tr, th, td {
+    border: 2px solid gray;
+    border-collapse: collapse;
+    padding: 10px 25px 10px 25px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+caption, thead {
+    font-size: 20px;
+    text-transform: uppercase;
+}
+thead {
+    color: white;
+    background-color: red;
+}
+.gray {
+    background-color: lightgray;
+}
+td, #bold {
+    font-weight: bold;
+}
+td:nth-child(1) {
+    font-weight: normal;
+}
+#db {
+    color: red;
+}
