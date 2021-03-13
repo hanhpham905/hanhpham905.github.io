@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 1. chu vi hình tròn
+            function circumference(diameter) {
+                return diameter * Math.PI
+            }
+            console.log(circumference(10))
+
+            // 2. diện tích hình tròn
+            function circleArea(radius) {
+                return Math.pow(radius, 2) * Math.PI
+            }
+            console.log(circleArea(5))
+
+            // 3. cm => m
+            function convertLength(centimeter) {
+                return centimeter / 100
+            }
+            console.log(convertLength(1))
+
+            // 4. phút => giờ
+            function convertTime(minute) {
+                return minute / 60
+            }
+            console.log(convertTime(30))
+
+            // 5. nghiệm phương trình ax + b = c
+            function equationRoot(a, b, c) {
+                return(c - b) / a
+            }
+            console.log(equationRoot(2, 4, 8))
+
+            // 6. độ C => độ F
+            function convertTemperature(celsius) {
+                return celsius * 1.8 + 32
+            }
+            console.log(convertTemperature(25))
+
+            // 7. tính chỉ số BMI
+            function calculateBMI(weight, height) {
+                return weight / Math.pow(height, 2)
+            }
+            console.log(calculateBMI(50, 1.65))
+
+            // 8. random 1 số trong khoảng min - max
+            function randomNumber(min, max) {
+                return Math.floor(Math.random() * (max - min)) + min;
+            }
+            console.log(randomNumber(15, 55))
+        </script>
+    </body>
+</html>
