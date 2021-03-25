@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 1.
+            let arr = [2, 4, 6, 8]
+            function checkAscArr() {
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] > arr[i + 1]) {
+                        return false
+                    }
+                }
+                return true
+            }
+            console.log(checkAscArr(arr))
+
+            // 2.
+            function checkDesArr() {
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] < arr[i + 1]) {
+                        return false
+                    }
+                }
+                return true
+            }
+            console.log(checkDesArr(arr))
+
+            // 3.
+            function checkAscEvenArr() {
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] % 2 != 0) {
+                        return false
+                    } else if (arr[i] > arr[i + 1]) {
+                        return false
+                    }
+                }
+                return true
+            }
+            console.log(checkAscEvenArr(arr))
+
+            // 4.
+            function checkDesOddArr() {
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] % 2 == 0) {
+                        return false
+                    } else if (arr[i] < arr[i + 1]) {
+                        return false
+                    }
+                }
+                return true
+            }
+            console.log(checkDesOddArr(arr))
+
+            // 5.
+            function findMaxNumberArr() {
+                let max = arr[0]
+                for (let i = 0; i < arr.length; i++) {
+                    if (max < arr[i]) {
+                        max = arr[i]
+                    }
+                }
+                console.log(max)
+            }
+            findMaxNumberArr(arr)
+
+            // 6.
+            function findMinNumberArr() {
+                let min = arr[0]
+                for (let i = 0; i < arr.length; i++) {
+                    if (arr[i] < min) {
+                        min = arr[i]
+                    }
+                }
+                console.log(min)
+            }
+            findMinNumberArr(arr)
+
+            // 7.
+            let arr1 = [
+                4,
+                2,
+                5,
+                6,
+                2,
+                7
+            ]
+            let arr2 = []
+            function modulo2() {
+                for (let i = 0; i < arr1.length; i++) {
+                    arr2.push(arr1[i] % 2)
+                }
+                console.log(arr2)
+            }
+            modulo2(arr1)
+
+            // 8.
+            let arrA = []
+            function repeatString(string) {
+                for (let i = 0; i < 10; i++) {
+                    arrA.push(string)
+                }
+                console.log(arrA)
+            }
+            repeatString('a')
+
+            // 9.
+            let arrDash = []
+            function repeatStringWithDash(string) {
+                for (let i = 0; i < 10; i++) {
+                    arrDash.push(string + '-')
+                }
+                console.log(arrDash)
+            }
+            repeatStringWithDash('a')
+        </script>
+    </body>
+</html>
