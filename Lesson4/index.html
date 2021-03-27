@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            // 1.
+            function similarity(arr1, arr2) {
+                let arr = []
+                if (arr1.length >= arr2.length) {
+                    for (let i = 0; i < arr1.length; i++) {
+                        if (arr1[i] == arr2[i]) {
+                            arr.push(arr1[i])
+                        }
+                    }
+                    return arr
+                } else if (arr1.length < arr2.length) {
+                    for (let i = 0; i < arr2.length; i++) {
+                        if (arr1[i] == arr2[i]) {
+                            arr.push(arr1[i])
+                        }
+                    }
+                    return arr
+                }
+            }
+            console.log(similarity([
+                1, 2, 3
+            ], [1, 2, 4]))
+
+            // 2.
+            function removeDuplicates(arr) {
+                let arrNoDup = []
+                for (let i = 0; i < arr.length; i++) {
+                    if (arrNoDup.indexOf(arr[i]) == -1) {
+                        arrNoDup.push(arr[i])
+                    }
+                }
+                return arrNoDup
+            }
+            console.log(removeDuplicates([
+                1,
+                2,
+                5,
+                2,
+                6,
+                2,
+                5
+            ]))
+
+            // 3.
+            function randomHexCode() {
+                let chars = '0123456789abcdef'
+                let result = '#'
+                for (let i = 0; i < 6; i++) {
+                    result += chars[Math.floor(Math.random() * 16)]
+                }
+                return result
+            }
+            console.log(randomHexCode())
+
+            // 4.
+            function randomRgbCode() {
+                let a = Math.floor(Math.random() * 256)
+                let b = Math.floor(Math.random() * 256)
+                let c = Math.floor(Math.random() * 256)
+                return `rbg(${a},${b},${c})`
+            }
+            console.log(randomRgbCode())
+        </script>
+    </body>
+</html>
